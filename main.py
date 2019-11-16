@@ -1,3 +1,5 @@
+# ugly/hacky example of requesting from twitter api
+
 import requests
 import json
 
@@ -8,16 +10,11 @@ headers = {
 }
 
 response = requests.request("GET", url, headers=headers, params=querystring)
-
-# print(response.text)
-
-tweets = []
-
 r = response.text
 
 for r in json.loads(response.text):
-    id = r['id']
+    user_id = r['id']
     retweet_created_at = r['created_at']
     # retweeted_tweet_created_at = r['retweeted_status']['created_at']
 
-    print(id, retweet_created_at)
+    print(user_id, retweet_created_at)
