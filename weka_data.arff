@@ -1,4 +1,25 @@
-user_id, num_tweets, retweet_ratio, hashtag_ratio, quote_ratio, tweet_favorite_ratio, tweet_retweet_ratio, mention_ratio, friend_follower_ratio, url_ratio, listed_count, verified, geo_enabled, protected, profile_uses_background_image, favourites_count, tweet_frequency_variance, class
+@RELATION weka_data
+
+@ATTRIBUTE user_id REAL
+@ATTRIBUTE num_tweets REAL
+@ATTRIBUTE retweet_ratio REAL
+@ATTRIBUTE hashtag_ratio REAL
+@ATTRIBUTE quote_ratio REAL
+@ATTRIBUTE tweet_favorite_ratio REAL
+@ATTRIBUTE tweet_retweet_ratio REAL
+@ATTRIBUTE mention_ratio REAL
+@ATTRIBUTE friend_follower_ratio REAL
+@ATTRIBUTE url_ratio REAL
+@ATTRIBUTE listed_count REAL
+@ATTRIBUTE verified {,False,True}
+@ATTRIBUTE geo_enabled {,False,True}
+@ATTRIBUTE protected {,False}
+@ATTRIBUTE profile_uses_background_image {,False,True}
+@ATTRIBUTE favourites_count REAL
+@ATTRIBUTE tweet_frequency_variance REAL
+@ATTRIBUTE class {,False,True}
+
+@DATA
 194908659,81648,0.0,0.0,0.0,0.64,1.08,0.0,0.009009769969310471,1.0,306,False,True,False,True,0,30476212.239112142,True
 
 358101059,37040,0.15,0.0,0.18,4.61,1.41,0.42,0.00013251575130407547,0.86,379,False,True,False,True,23,329195130.36071956,True
